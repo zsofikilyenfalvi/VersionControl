@@ -35,16 +35,16 @@ namespace week4
 
         private void CreateExcel()
         {
-         try
+            try
             {
                 xlApp = new Excel.Application();
                 xlWB = xlApp.Workbooks.Add(Missing.Value);
                 xlSheet = xlWB.ActiveSheet;
-                CreateTable(); 
+                CreateTable();
                 xlApp.Visible = true;
                 xlApp.UserControl = true;
             }
-         catch (Exception ex) 
+            catch (Exception ex)
             {
                 string errMsg = string.Format("Error: {0}\nLine: {1}", ex.Message, ex.Source);
                 MessageBox.Show(errMsg, "Error");
@@ -69,7 +69,7 @@ namespace week4
                 "Alapterület (m2)",
                 "Ár (mFt)",
                 "Négyzetméter ár (Ft/m2)"};
-            
+
             for (int i = 0; i < headers.Length; i++)
             {
                 Console.WriteLine(headers);
@@ -82,7 +82,7 @@ namespace week4
             foreach (Flat f in Flats)
             {
                 values[counter, 0] = f.Code;
-                
+
                 values[counter, 8] = "";
                 counter++;
             }
@@ -105,6 +105,17 @@ namespace week4
             return ExcelCoordinate;
         }
 
+        private void FrontTable()
+        {
+            Excel.Range headerRange = xlSheet.get_Range(GetCell(1, 1), GetCell(1, headers.Length));
+            headerRange.Font.Bold = true;
+            headerRange.VerticalAlignment = Excel.XlVAlign.xlVAlignCenter;
+            headerRange.HorizontalAlignment = Excel.XlHAlign.xlHAlignCenter;
+            headerRange.EntireColumn.AutoFit();
+            headerRange.RowHeight = 40;
+            headerRange.Interior.Color = Color.LightBlue;
+            headerRange.BorderAround2(Excel.XlLineStyle.xlContinuous, Excel.XlBorderWeight.xlThick);
+        }
 
     }
 }
