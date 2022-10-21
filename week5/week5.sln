@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "week5", "week5\week5.csproj", "{FE56AF2D-E080-46DB-8F6B-2E3B19495B58}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Entities", "Entities", "{0682AF1A-9BFE-46F4-87EC-AEAFC29C35B8}"
+	ProjectSection(SolutionItems) = preProject
+		DataRate1.cs = DataRate1.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE56AF2D-E080-46DB-8F6B-2E3B19495B58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE56AF2D-E080-46DB-8F6B-2E3B19495B58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE56AF2D-E080-46DB-8F6B-2E3B19495B58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE56AF2D-E080-46DB-8F6B-2E3B19495B58}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A1E96D7E-7DA9-4A4B-ACEB-86046766BB48}
+	EndGlobalSection
+EndGlobal
