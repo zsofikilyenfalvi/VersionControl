@@ -13,6 +13,9 @@ namespace week5
 {
     public partial class Form1 : Form
     {
+        BindingList<Class1> rates = new BindingList<Class1>();
+        datagr
+
         public Form1()
         {
             InitializeComponent();
@@ -30,8 +33,9 @@ namespace week5
 
             var result = response.GetExchangeRatesResult;
 
-            BindingList<DataRate1> rates = new BindingList<DataRate1>;
+            
 
         }
     }
+
 }
