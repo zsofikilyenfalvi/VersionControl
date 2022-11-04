@@ -1,7 +1,7 @@
 ﻿using System;
 using.System.Windows.Forms;
 
-public class Toy: Label
+public abstract class Toy: Label
 {
     protected override void DrawImage(Graphics g)
     {

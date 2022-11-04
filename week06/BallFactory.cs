@@ -1,11 +1,7 @@
 ﻿using System;
 
-public class BallFactory
+public class BallFactory : IToyFactory
 {
-	public BallFactory()
-	{
-		
-	}
 
 	public Ball CreatNew()
     {
