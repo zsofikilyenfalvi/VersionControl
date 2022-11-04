@@ -2,9 +2,9 @@
 using.System.Windows.Forms;
 
 
-public class Class1: Label
+public class Ball: Label
 {
-	public Class1()
+	public Ball()
 	{
 		AutoSize = false;
 		Width = 50;

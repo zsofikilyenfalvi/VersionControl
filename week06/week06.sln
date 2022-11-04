@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Entiti", "Entiti", "{3C119687-3522-4ED9-B173-2E23B3952D95}"
 	ProjectSection(SolutionItems) = preProject
 		Ball.cs = Ball.cs
+		BallFactory.cs = BallFactory.cs
 	EndProjectSection
 EndProject
 Global
