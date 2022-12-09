@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rd7z7p_week10", "rd7z7p_wee
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libs", "libs", "{50744591-C3EC-4D3A-9BE4-7060AB92A27A}"
 	ProjectSection(SolutionItems) = preProject
-		rd7z7p_week10\libs\WorldsHardestGame (1).dll = rd7z7p_week10\libs\WorldsHardestGame (1).dll
+		..\..\..\..\..\Downloads\WorldsHardestGame (1).dll = ..\..\..\..\..\Downloads\WorldsHardestGame (1).dll
 	EndProjectSection
 EndProject
 Global
